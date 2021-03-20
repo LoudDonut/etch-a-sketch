@@ -1,0 +1,13 @@
+body {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+}
+
+.sketch-container {
+	display: flex;
+	background-color: grey;
+	height: 20em;
+	width: 20em;
+	flex-wrap: wrap;
+}
