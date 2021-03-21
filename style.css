@@ -10,26 +10,32 @@ h1 {
 	color: rgb(255, 255, 255);
 	font-size: 2em;
 	font-family: sans-serif;
-	text-shadow: -0.1em 0.1em rgb(46, 46, 46);
+	text-shadow: -1px 6px 7px rgba(0,0,0,0.15);
 }
 
 .sketch-container {
-	margin-top: 2.5em;
+	margin-top: 2em;
 	display: flex;
 	background-color: rgb(255, 255, 255);
 	height: 30em;
 	width: 30em;
 	flex-wrap: wrap;
-	box-shadow: -0.25em 0.25em rgb(46, 46, 46);
+	box-shadow: -5px 6px 7px rgba(0,0,0,0.15);
+	border: 1px solid black;
 }
 
 button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	margin-top: 1em;
+	height: 3em;
+	width: auto;
 	border: 0.2em none rgb(255, 255, 255);
+	border-radius: 7px;
 	font-family: sans-serif;
 	color: rgb(255, 255, 255);
-	text-shadow: -0.1em 0.1em rgb(46, 46, 46);
 	font-size: 1em;
-	background-color: rgb(50, 96, 182);
-	box-shadow: -0.2em 0.2em rgb(43, 42, 42);
+	background-color: rgba(255, 255, 255, 0.103);
+	box-shadow: -1px 6px 7px rgba(0,0,0,0.15);
 }
