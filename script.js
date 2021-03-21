@@ -36,14 +36,14 @@ function randomColor() {
 }
 
 function colorPixels() {
-const allPixels = document.querySelectorAll(".sketch-container > div");
-
-allPixels.forEach((pixel) => {
-	pixel.addEventListener("mouseover", (e) => {
-		let randomHex = randomColor();
-		e.target.style.backgroundColor = randomHex;
+	const allPixels = document.querySelectorAll(".sketch-container > div");
+	
+	allPixels.forEach((pixel) => {
+		pixel.addEventListener("mouseover", (e) => {
+			let randomHex = randomColor();
+			e.target.style.backgroundColor = randomHex;
+		});
 	});
-});
 }
 
 function etchASketch (size) {
@@ -51,10 +51,38 @@ function etchASketch (size) {
 	colorPixels();
 }
 
+//WHEN PAGE LOADS
 etchASketch(16);
 
-//
+//BUTTON FUNCTIONS
+function deletePixels() {
+	const sketchContainer = document.querySelector(".sketch-container");
+	const allPixels = document.querySelectorAll(".sketch-container > div");
+	
+	allPixels.forEach((pixel) => {
+		sketchContainer.removeChild(pixel);
+	});
+}
+
+function newGrid() {
+	const button = document.querySelector("button");
+	button.addEventListener("click", (e) => {
+		let randomHex = randomColor();
+		e.target.style.borderColor = randomHex;
+		let newSize = prompt("Enter new grid size (Max 64 x 64)");
+		if (newSize < 1 || newSize > 64) {
+			alert("Set to max 64 x 64");
+			deletePixels();
+			etchASketch(64);
+		}
+		else{
+			deletePixels();
+			etchASketch(newSize);
+		}
+	});
+}
 
 
+newGrid();
 
 

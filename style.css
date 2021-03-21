@@ -1,13 +1,35 @@
 body {
 	display: flex;
-	justify-content: center;
-	background-color: black;
+	flex-direction: column;
+	background-color: rgb(68, 121, 122);
+	align-items: center;
+}
+
+h1 {
+	margin-top: 1em;
+	color: rgb(255, 255, 255);
+	font-size: 2em;
+	font-family: sans-serif;
+	text-shadow: -0.1em 0.1em rgb(46, 46, 46);
 }
 
 .sketch-container {
+	margin-top: 2.5em;
 	display: flex;
-	background-color: grey;
+	background-color: rgb(255, 255, 255);
 	height: 30em;
 	width: 30em;
 	flex-wrap: wrap;
+	box-shadow: -0.25em 0.25em rgb(46, 46, 46);
+}
+
+button {
+	margin-top: 1em;
+	border: 0.2em none rgb(255, 255, 255);
+	font-family: sans-serif;
+	color: rgb(255, 255, 255);
+	text-shadow: -0.1em 0.1em rgb(46, 46, 46);
+	font-size: 1em;
+	background-color: rgb(50, 96, 182);
+	box-shadow: -0.2em 0.2em rgb(43, 42, 42);
 }
