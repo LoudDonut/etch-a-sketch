@@ -7,7 +7,7 @@ body {
 .sketch-container {
 	display: flex;
 	background-color: grey;
-	height: 20em;
-	width: 20em;
+	height: 30em;
+	width: 30em;
 	flex-wrap: wrap;
 }
